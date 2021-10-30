@@ -1,0 +1,28 @@
+#top {
+  /*최상단 프로젝트 이름*/
+  width: 100%;
+}
+#top.btn.btn-warning {
+  font-weight: 700;
+}
+#chatLog {
+  /*채팅 기록*/
+  height: calc(100% - 135px);
+}
+#chat,
+#privateChat {
+  /*이름, 메시지, 전송버튼*/
+  display: flex;
+}
+#name,
+#socketId {
+  width: 40%;
+}
+#message,
+#privateMessage {
+  width: 40%;
+}
+#send,
+#privateSend {
+  width: 20%;
+}
