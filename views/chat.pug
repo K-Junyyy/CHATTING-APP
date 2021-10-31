@@ -76,15 +76,7 @@ html
                 // 채팅창 스크롤이 생길 시 제일 아래쪽으로 스크롤을 내려줌
                 $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
             });
-
-            //- // 개인 메세지 수신
-            //- socket.on('receive privateMessage', function(msg){
-            //-     // 메세지 출력
-            //-     $('#chatLog').append(msg+'\n');
-            //-     // 채팅창 스크롤이 생길 시 제일 아래쪽으로 스크롤을 내려줌
-            //-     $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
-            //- });
-	  
+            
             // 채팅방 접속
             socket.on('new connect', function(name){
                 $('#chatLog').append('[알림] ' + name + '님이 채팅창에 입장하였습니다.\n');
